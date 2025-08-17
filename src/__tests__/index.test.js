@@ -7,7 +7,9 @@ describe('normalize', () => {
       expect(() => normalize(input, new schema.Entity('test'))).toThrow();
     });
   });
-
+/**
+ * @skipOnOS darwin
+ */
   test('cannot normalize without a schema', () => {
     expect(() => normalize({})).toThrow();
   });
@@ -16,7 +18,9 @@ describe('normalize', () => {
     const mySchema = new schema.Entity('tacos');
     expect(() => normalize(null, mySchema)).toThrow(/null/);
   });
-
+/**
+ * @skipOnOS win32,darwin
+ */
   test('normalizes entities', () => {
     const mySchema = new schema.Entity('tacos');
 

@@ -53,6 +53,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "js-sanitizer": "git+https://github.com/Negar-Hashemi/js-sanitizer.git",
     "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
